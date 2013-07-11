@@ -154,3 +154,8 @@ let g:unite_enable_start_insert = 1
 let g:unite_source_file_mru_long_limit = 100
 let g:unite_source_directory_mru_long_limit = 100
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
+
+
+let g:airline_powerline_fonts=1
+let g:airline_theme='light' " dark simple badwolf solarized solarized2
+set noshowmode

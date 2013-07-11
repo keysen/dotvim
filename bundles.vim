@@ -37,7 +37,7 @@ Bundle 'austintaylor/vim-indentobject'
 " global search & replace
 Bundle 'greplace.vim'
 " better looking statusline
-Bundle 'astrails/vim-powerline'
+Bundle 'bling/vim-airline'
 " plugin for resolving three-way merge conflicts
 Bundle 'sjl/threesome.vim'
 " plugin for visually displaying indent levels
