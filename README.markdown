@@ -7,8 +7,8 @@ All the right plugins are in. Nerdtree, CtrlP, you name it.
 The focus is on supporting Rails, but there is a lot of generic stuff too, so
 it will surely serve you well with any language of your choice.
 
-The config is using [Vundle](http://github.com/gmarik/vundle) for easy
-upgrading.
+The config is using [NeoBundle](https://github.com/Shougo/neobundle.vim) for easy
+upgrading. The list of installed bundles is in the `bundles.vim`
 
 *Some* help tips are provided for *some* of the plugins. please check out the
 plugin's docs for more info.
