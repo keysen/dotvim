@@ -103,6 +103,7 @@ NeoBundle 'wavded/vim-stylus'
 NeoBundle 'VimClojure'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'vitaly/vim-go'
 
 " Support and minor
 
