@@ -33,4 +33,8 @@ map <C-Down> <C-w><Down>
 map <C-Right> <C-w><Right>
 map <C-Left> <C-w><Left>
 
+let g:solarized_termcolors=256
+"let g:solarized_contrast="high" 
+"let g:solarized_visibility="high"
+
 filetype plugin indent on
