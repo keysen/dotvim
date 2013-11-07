@@ -1,4 +1,7 @@
-colorscheme zenburn
+set background=dark
+set mousemodel=popup
+
+colorscheme solarized
 
 set wildignore+=.hg,.git,.svn
 set wildignore+=*.aux,*.out,*.toc
