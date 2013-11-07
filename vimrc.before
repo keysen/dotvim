@@ -1,0 +1,4 @@
+filetype off
+
+Bundle 'evanmiller/nginx-vim-syntax'
+Bundle 'Colour-Sampler-Pack'

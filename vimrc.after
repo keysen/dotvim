@@ -1,0 +1,33 @@
+colorscheme zenburn
+
+set wildignore+=.hg,.git,.svn
+set wildignore+=*.aux,*.out,*.toc
+set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg
+set wildignore+=*.pdf
+set wildignore+=*.dat
+set wildignore+=*.o,*.so
+set wildignore+=*.obj,*~
+set wildignore+=*.pyc
+set wildignore+=*.sw?
+set wildignore+=*.DS_Store?
+set wildignore+=venv
+set wildignore+=*.fits,*.hdf5,*.h5
+set wildignore+=*vim/backups*
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=vendor/rails/**
+set wildignore+=vendor/cache/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=public/fallback/**
+set wildignore+=public/uploads/**
+set wildignore+=app/assets/images/**
+
+map <F9> :emenu <C-Z>
+map <C-Up> <C-w><Up>
+map <C-Down> <C-w><Down>
+map <C-Right> <C-w><Right>
+map <C-Left> <C-w><Left>
+
+filetype plugin indent on
