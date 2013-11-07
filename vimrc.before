@@ -1,4 +1,5 @@
 filetype off
 
 Bundle 'evanmiller/nginx-vim-syntax'
+Bundle 'StanAngeloff/php.vim'
 Bundle 'Colour-Sampler-Pack'
