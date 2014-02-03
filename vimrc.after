@@ -34,8 +34,12 @@ map <C-Right> <C-w><Right>
 map <C-Left> <C-w><Left>
 
 let g:solarized_termcolors=256
-"let g:solarized_contrast="high" 
+"let g:solarized_contrast="high"
 "let g:solarized_visibility="high"
-let g:nerdtree_tabs_open_on_gui_startup=0 
+let g:nerdtree_tabs_open_on_gui_startup=0
+"let g:ctrlp_working_path_mode = 'r'
 
 filetype plugin indent on
+"set shell=zsh\ -i
+
+autocmd BufWritePre * :%s/\s\+$//e
