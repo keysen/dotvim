@@ -41,5 +41,7 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 
 filetype plugin indent on
 "set shell=zsh\ -i
+"set guifont=Monaco:h20
+set guifont=Monospace\ 9
 
 autocmd BufWritePre * :%s/\s\+$//e
