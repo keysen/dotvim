@@ -30,8 +30,8 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-surround'
 " vertical alignment tool
 Bundle 'tsaleh/vim-align'
-" 'ack' searching integration
-Bundle 'mileszs/ack.vim'
+" 'ag' searching integration
+Bundle 'rking/ag.vim'
 " text object based on indent level (ai, ii)
 Bundle 'austintaylor/vim-indentobject'
 " global search & replace
@@ -39,7 +39,7 @@ Bundle 'greplace.vim'
 " better looking statusline
 Bundle 'astrails/vim-powerline'
 " plugin for resolving three-way merge conflicts
-Bundle 'sjl/threesome.vim'
+Bundle 'sjl/splice.vim'
 " plugin for visually displaying indent levels
 Bundle 'Indent-Guides'
 " end certain structures automatically, e.g. begin/end etc.
@@ -60,6 +60,8 @@ Bundle 'sjl/gundo.vim'
 Bundle 'AndrewRadev/switch.vim'
 " async external commands with output in vim
 Bundle 'tpope/vim-dispatch'
+" git diff in the gutter (sign column) and stages/reverts hunks
+Bundle 'airblade/vim-gitgutter'
 
 " Ruby/Rails
 
@@ -77,6 +79,8 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'apidock.vim'
 " toggle ruby blocks style
 Bundle 'vim-scripts/blockle.vim'
+" lightweight Rspec runner for Vim
+Bundle 'josemarluedke/vim-rspec'
 
 " color themes
 Bundle 'altercation/vim-colors-solarized'
@@ -84,7 +88,6 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 
 " syntax support
-
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tsaleh/vim-tmux'
 Bundle 'Puppet-Syntax-Highlighting'
@@ -99,6 +102,8 @@ Bundle 'wavded/vim-stylus'
 Bundle 'VimClojure'
 Bundle 'slim-template/vim-slim'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'Blackrush/vim-gocode'
+Bundle 'ekalinin/Dockerfile.vim'
 
 " Support and minor
 

@@ -46,12 +46,13 @@ announcements of new versions, tips, etc.
   * [vim-indentobject](#vim-indentobject)
   * [greplace.vim](#greplace.vim)
   * [vim-powerline](#powerline)
-  * [threesome.vim](#threesome.vim)
+  * [splice.vim](#splice.vim)
   * [vim-endwise](#vim-endwise)
   * [delimitMate](#delimitMate)
   * [Gundo](#gundo)
   * [vim-dispatch](#vim-dispatch)
   * [unite.vim](#unite.vim)
+  * [vim-gitgutter](#gitgutter)
 * [Ruby/Rails Support](#ruby)
   * [vim-rails](#vim-rails)
   * [vim-bundler](#vim-bundler)
@@ -374,13 +375,20 @@ execute it with `@a`.
     * `:AlignSEPARATORS` - align on separators
     * `:h align` - see help for more options
 
-*   <a name=ack.vim>[ack.vim](http://github.com/mileszs/ack.vim) ([top](#top))
+*   <a name=ag.vim>[ag.vim](http://github.com/rking/ag.vim) ([top](#top))
 
-    This plugin is a front for the Perl module App::Ack. Ack can be used as a replacement for 99% of the uses of grep.
+    This plugin is a front for ag, A.K.A.
+    [the_silver_searcher](https://github.com/ggreer/the_silver_searcher).  Ag can
+    be used as a replacement for 153% of the uses of `ack`.  This plugin will allow
+    you to run ag from vim, and shows the results in a split window.
 
-    * `:Ack [options] {pattern} [{directory}]` - grep for the pattern in side directory and open result in a QuickFix window
-    * `:Ack --ruby ...` - search only ruby files.
-    * `:h Ack` - more help about Ack
+    * `:Ag [options] {pattern} [{directory}]` - grep for the pattern in side directory and open result in a QuickFix window
+    * `:h Ag` - more help about Ag
+
+    Installation:
+
+    * on OSX: `brew install the_silver_searcher` or `port install the_silver_searcher`
+    * on Ubuntu: `apt-get install silversearcher-ag`
 
 *   <a name=vim-indentobject>[vim-indentobject](https://github.com/austintaylor/vim-indentobject) ([top](#top))
 
@@ -423,42 +431,43 @@ execute it with `@a`.
     > now is that I forked the original plugin project and make it available
     > under `astrails` account in a form suitable for vundle.
 
-*   <a name=threesome.vim>[threesome.vim](https://github.com/sjl/threesome.vim) ([top](#top))
+*   <a name=splice.vim>[splice.vim](https://github.com/sjl/splice.vim) ([top](#top))
 
     A plugin for resolving conflicts during three-way merges.
 
     Add the following lines to ~/.gitconfig to use
 
     [merge]
-    tool = threesome
+    tool = splice
 
-    [mergetool "threesome"]
-    cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+    [mergetool "splice"]
+    cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
     trustExitCode = true
 
     Bindings:
 
-    * `\g` - switch to grid view
-    * `\l` - switch to loupe view
-    * `\c` - switch to compare view
-    * `\p` - switch to path view
+    * `-g` - switch to grid view
+    * `-l` - switch to loupe view
+    * `-c` - switch to compare view
+    * `-p` - switch to path view
 
-    * `\o` - select the original file
-    * `\1` - select file one
-    * `\2` - select file two
-    * `\r` - select the results file
+    * `-o` - select the original file
+    * `-1` - select file one
+    * `-2` - select file two
+    * `-r` - select the results file
 
-    * `\n` - next unresolved conflict
-    * `\N` - prev unresolved conflict
+    * `-n` - next unresolved conflict
+    * `-N` - prev unresolved conflict
 
-    * `\<space>` - cycle layout
-    * `\s` - toggle scrolllocking
-    * `\d` - cycle diff combinations
-    * `\D` - turn off all diffs
+    * `-<space>` - cycle layout
+    * `-s` - toggle scrolllocking
+    * `-d` - cycle diff combinations
+    * `-D` - turn off all diffs
 
-    * `\CC` - exits vim with error code (like :cquit). this will indicate to git that merge resolution failed
+    * `-CC` - exits vim with error code (like :cquit). this will indicate to git that merge resolution failed
+    * `-q`  - exits vim with success; this will indicate to git that merge succeeded
 
-    * `:h threesome` - you should probably read it ;)
+    * `:h splice` - you should probably read it ;)
 
 *   <a name=vim-endwise>[vim-endwise](http://github.com/tpope/vim-endwise) ([top](#top))
 
@@ -501,6 +510,39 @@ execute it with `@a`.
     Then try to navigate up and down and see what happens ;)
 
 [unite]: https://github.com/Shougo/unite.vim
+
+*   <a name=gitgutter>[Vim Git Gutter](https://github.com/airblade/vim-gitgutter) ([top](#top))
+    A Vim plugin which shows a git diff in the 'gutter' (sign column).
+    It shows whether each line has been added, modified, and where lines have been removed.
+
+    ![screenshot](https://raw.github.com/airblade/vim-gitgutter/master/screenshot.png)
+
+    In the screenshot above you can see:
+
+    * Line 15 has been modified.
+    * Lines 21-24 are new.
+    * A line or lines were removed between lines 25 and 26.
+
+    Commands:
+
+    * `:GitGutterDisable`
+    * `:GitGutterEnable`
+    * `:GitGutterToggle`
+    * `:GitGutterSignsEnable`
+    * `:GitGutterSignsDisable`
+    * `:GitGutterSignsToggle`
+    * `:GitGutterLineHighlightsEnable`
+    * `:GitGutterLineHighlightsDisable`
+    * `:GitGutterLineHighlightsToggle`
+
+    Bindings:
+
+    * `]c` - jump to next hunk
+    * `[c` - jump to previous hunk
+    * `,hs` - stage hunk
+    * `,hr` - revert hunk
+
+    There are quite some customization options. see help.
 
 *   <a name=switch>[Switch](https://github.com/AndrewRadev/switch.vim) ([top](#top))
 
@@ -589,6 +631,20 @@ execute it with `@a`.
     * `RR` - Search the Rails docs for the word under the cursor.
     * `RB` - Search the Ruby docs for the word under the cursor.
     * `RS` - Search the RSpec docs for the word under the cursor.
+
+*   <a name=vim-rspec>[vim-rspec](https://github.com/josemarluedke/vim-rspec) ([top](#top))
+
+    Lightweight Rspec runner for Vim.
+
+    Commands are self explanatory:
+
+    * `:call RunCurrentSpecFile()`
+    * `:call RunNearestSpec()`
+    * `:call RunLastSpec()`
+
+    Bindings:
+
+    * `,r` - `RunNearestSpec`
 
 [top](#top)
 
@@ -729,6 +785,14 @@ used intependently.
 *   stylus
 
     TBD
+
+*   [vim-gocode](https://github.com/Blackrush/vim-gocode)
+
+    Golang syntax support
+
+*   [Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim)
+
+    Syntax for [Docker](http://www.docker.io) build files.
 
 [top](#top)
 
