@@ -12,3 +12,8 @@ source ~/.vim/before.vim   " local BEFORE configs
 " after.vim is loaded from ./after/plugin/after.vim
 " which should place it AFTER all the other plugins in the loading order
 " bindings.vim and local.vim are loaded from after.vim
+
+set noballooneval
+set lines=55 columns=200
+winpos 150 50
+colorscheme solarized
