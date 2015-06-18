@@ -16,4 +16,5 @@ source ~/.vim/before.vim   " local BEFORE configs
 set noballooneval
 set lines=55 columns=200
 winpos 150 50
+set background=dark
 colorscheme solarized
