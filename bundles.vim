@@ -53,7 +53,7 @@ NeoBundle 'Raimondi/delimitMate'
 " calendar, duh!
 NeoBundle 'calendar.vim--Matsumoto'
 " A Narrow Region Plugin (similar to Emacs)
-NeoBundle 'chrisbra/NrrwRgn'
+"NeoBundle 'chrisbra/NrrwRgn'
 " url based hyperlinks for text files
 NeoBundle 'utl.vim'
 " A clone of Emacs' Org-mode for Vim
@@ -66,6 +66,10 @@ NeoBundle 'AndrewRadev/switch.vim'
 NeoBundle 'tpope/vim-dispatch'
 " git diff in the gutter (sign column) and stages/reverts hunks
 NeoBundle 'airblade/vim-gitgutter'
+" hi-speed html coding
+NeoBundle 'mattn/emmet-vim'
+" editorconfig.org support
+NeoBundle 'editorconfig/editorconfig-vim'
 
 " Ruby/Rails
 
@@ -85,6 +89,8 @@ NeoBundle 'apidock.vim'
 NeoBundle 'vim-scripts/blockle.vim'
 " lightweight Rspec runner for Vim
 NeoBundle 'josemarluedke/vim-rspec'
+" i18n extraction plugin
+NeoBundle 'stefanoverna/vim-i18n'
 
 " color themes
 NeoBundle 'altercation/vim-colors-solarized'
@@ -103,12 +109,21 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'vitaly/vim-syntastic-coffee'
 NeoBundle 'vim-scripts/jade.vim'
 NeoBundle 'wavded/vim-stylus'
-NeoBundle 'VimClojure'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'Blackrush/vim-gocode'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'groenewege/vim-less'
+NeoBundle 'mustache/vim-mustache-handlebars'
+NeoBundle 'mtscout6/vim-cjsx'
+NeoBundle 'vitaly/vim-literate-coffeescript'
+NeoBundle 'rust-lang/rust', {'rtp': 'src/etc/vim/'}
+
+" clojure
+"NeoBundle 'VimClojure'
+NeoBundle 'guns/vim-clojure-static'
+NeoBundle 'tpope/vim-fireplace'
+NeoBundle 'kien/rainbow_parentheses.vim'
 
 " Support and minor
 
@@ -129,10 +144,22 @@ NeoBundle 'mattn/webapi-vim'
 "NeoBundle 'tpope/vim-unimpaired'
 "NeoBundle 'reinh/vim-makegreen'
 
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/unite-colorscheme'
+
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
 
 call neobundle#end()
 

@@ -1,3 +1,20 @@
+* unreleased
+
+* 2015-07-21
+  - mintplant/vim-literate-coffeescript repo is gone. replaced with a cached
+  copy at vitaly/vim-literate-coffeescript
+
+* 2015-06-19
+  - vim-i18n plugin for extracting i18n strings into .yml files
+  - syntax support: mustashe-handlebars, literate coffeescript and React cjsx
+  - upgraded clojure syntax support
+  - vim plugin for emmet.io HTML/CSS workflow
+  - improved CtrlP ignore list to skip image files
+  - editorconfig.org file support
+  - disabled chrisbra/NrrwRgn
+  - rust language support
+  - string interpolation for easy surround (tyanks @erez-rabih)
+
 * 2014-11-25
   - fix a deprecation warning by the latest NeoBundle version.
 

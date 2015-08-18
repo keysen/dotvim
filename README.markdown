@@ -62,6 +62,10 @@ announcements of new versions, tips, etc.
   * [vim-dispatch](#vim-dispatch)
   * [unite.vim](#unite.vim)
   * [vim-gitgutter](#gitgutter)
+  * [vim-i18n](#i18n)
+  * [switch](#switch)
+  * [emmet-vim](#emmet)
+  * [editorconfig](#editorconfig)
 * [Ruby/Rails Support](#ruby)
   * [vim-rails](#vim-rails)
   * [vim-bundler](#vim-bundler)
@@ -167,6 +171,11 @@ files. There are several override files supported by dotvim.
 They are loaded in the following order:
 
 * base dotvim configuration (global, plugin configurations, bindings, macros)
+* `~/.vimrc.bundles`
+
+  Loads additional bundles inside the `neobundle#begin/end` block.
+  Should contain lines like `NeoBundle 'my-custom/bundle'`
+
 * `~/.local-before.vim` _[deprecated]_
 * `~/.vimrc.before`
 
@@ -563,12 +572,26 @@ execute it with `@a`.
 
     There are quite some customization options. see help.
 
+*   <a name=i18n>[vim-i18n](https://github.com/stefanoverna/vim-i18n) ([top](#top))
+
+    Extracts i18n strings from source files into .yml file.
+
+    * `,z` - extract selected string
+
 *   <a name=switch>[Switch](https://github.com/AndrewRadev/switch.vim) ([top](#top))
 
     A plugin to switch segments of text with predefined replacements
 
     it will switch `"foo"` to `'foo'` to `:foo`. or `{:foo => bar}` to `{foo: bar}`,
     etc. See `:h switch` for more.
+
+*   <a name=emmet>[Switch](https://github.com/mattn/emmet-vim) ([top](#top))
+
+    [emmet.io](http://emmet.io) like html/css workflow plugin.
+
+*   <a name=editorconfig>[editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) ([top](#top))
+
+    [.editorconfig](http://editorconfig.org) file support.
 
 [top](#top)
 
@@ -816,6 +839,24 @@ used intependently.
 *   [vim-less](https://github.com/groenewege/vim-less)
 
     Syntax for [LESS](http://lesscss.org/).
+
+*   [vim-mustache-handlebars](https://github.com/mustache/vim-mustache-handlebars)
+
+    Syntax for [mustache](http://mustache.github.io) and
+    [handlebars](http://handlebarsjs.com) templates.
+
+*   Clojure syntax support by the following plugins:
+
+    [vim-clojure-static](http://github.com/guns/vim-clojure-static)
+    [vim-fireplace](http://github.com/tpope/vim-fireplace)
+    [rainbow_parentheses](http://github.com/kien/rainbow_parentheses.vim)
+
+    rainbow_parentheses can be useful to other languages as well ;)
+
+*   [Rust](http://www.rust-lang.org) support.
+
+    using files from [rust repository](https://github.com/rust-lang/rust)
+
 
 [top](#top)
 
