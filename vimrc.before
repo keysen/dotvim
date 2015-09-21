@@ -5,6 +5,7 @@ NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle 'StanAngeloff/php.vim'
 NeoBundle 'Colour-Sampler-Pack'
 NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'gabesoft/vim-ags'
 call neobundle#end()
 
 NeoBundleCheck
