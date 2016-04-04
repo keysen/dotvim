@@ -6,6 +6,8 @@ NeoBundle 'StanAngeloff/php.vim'
 NeoBundle 'Colour-Sampler-Pack'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'gabesoft/vim-ags'
+NeoBundle 'mxw/vim-jsx'
+NeoBundle 'justinj/vim-react-snippets'
 call neobundle#end()
 
 NeoBundleCheck
