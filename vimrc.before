@@ -2,11 +2,10 @@ filetype off
 
 call neobundle#append()
 NeoBundle 'evanmiller/nginx-vim-syntax'
-NeoBundle 'StanAngeloff/php.vim'
-NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'gabesoft/vim-ags'
+NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'justinj/vim-react-snippets'
-NeoBundle 'vim-airline/vim-airline-themes'
+NeoBundle 'StanAngeloff/php.vim'
 call neobundle#end()
 
 NeoBundleCheck
