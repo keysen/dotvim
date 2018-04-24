@@ -55,8 +55,8 @@ filetype plugin indent on
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 
 autocmd BufWritePre * :%s/\s\+$//e
-winpos 150 50
-set lines=55 columns=200
+"winpos 150 50
+"set lines=55 columns=200
 set mousemodel=popup
 set expandtab
 set shiftwidth=2
