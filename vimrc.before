@@ -1,7 +1,7 @@
 filetype off
 
 call neobundle#append()
-NeoBundle 'evanmiller/nginx-vim-syntax'
+NeoBundle 'chr4/nginx.vim'
 NeoBundle 'gabesoft/vim-ags'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'justinj/vim-react-snippets'
